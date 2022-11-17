@@ -2,9 +2,10 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 import json
+import sys
   
 # reading image
-img = cv2.imread('daily-hack3/test-images/test3.png')
+img = cv2.imread(sys.argv[1])
 logo = cv2.imread('daily-hack3/reference-images/logo.png')
 
 with open('colors.types') as f:
